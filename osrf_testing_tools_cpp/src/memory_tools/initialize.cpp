@@ -36,6 +36,13 @@ initialized()
 }
 
 void
+initialize(VerbosityLevel verbosity_level)
+{
+  set_verbosity_level(verbosity_level);
+  initialize();
+}
+
+void
 initialize()
 {
   auto conditional_print = [](const char * msg) {
